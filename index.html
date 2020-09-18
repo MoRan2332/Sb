@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="Tool.js"></script> -->
+    <!-- <script src="Food.js"></script>
+    <script src="Snack.js"></script>
+    <script src="Game.js"></script> -->
+    <script src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            background-color: gray;
+            width: 500px;
+            height: 500px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        .mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(27, 230, 230, 0.8);
+            /* display: none; */
+        }
+
+        .level {
+            width: 200px;
+            height: 60px;
+            color: rgb(255, 255, 255);
+            line-height: 60px;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 auto;
+            padding: 50px 0;
+            cursor: pointer;
+        }
+
+        .level:first-child {
+            padding-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="mask">
+        <div class="level">初级</div>
+        <div class="level">中级</div>
+        <div class="level">高级</div>
+        <div class="level">噩梦</div>
+    </div>
+
+</body>
+
+</html>
